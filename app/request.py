@@ -1,15 +1,23 @@
 from app import app
-from app import app
 import urllib.request,json
-from .models import news
+from .models import source
+from instance.config import NEWS_API_KEY
+from newsapi import NewsApiClient
+
+Source = source.Source
 
 
+# Getting api key
+source_api_key = NewsApiClient(api_key=NEWS_API_KEY)
+
+# Getting the movie base url
+base_url = app.config["NEWS_API_BASE_URL"]
 
 def get_source():
     '''
     Function that gets the json response to url request
     '''
-    get_source_url= source_url.format(api_key)
+    get_source_url= source_url.format(source_api_key)
     # print(get_source_url)
     with urllib.request.urlopen(get_source_url) as url:
         get_sources_data = url.read()
@@ -24,13 +32,7 @@ def get_source():
     return source_results
 
 def process_results(source_list):
-    '''
-    function to process results and transform them to a list of objects
-    Args:
-        source_list:dictionary cotaining source details
-    Returns:
-        source_results: A list of source objects
-    '''
+  
     source_results = []
     for source_item in source_list:
         id = source_item.get('id')
