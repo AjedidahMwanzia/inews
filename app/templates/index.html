@@ -8,6 +8,20 @@
 
 </head>
 <body>
-   <h1> Hello World </h1> 
+   <!-- Popular movie section  -->
+   <h3> Popular News</h3>
+   <ul>
+      {% for popular_news in popular %}
+          <li>{{ popular_news.name}</li>
+      {% endfor %}
+  </ul>
+  
+        <!-- Now live news -->
+        <h3>Now Live</h3>
+         <ul>
+            {% for now_live_news in now_live %}
+                <li>{{ now_live_news.name}}</li>
+            {% endfor %}
+        </ul>
 </body>
 </html>
