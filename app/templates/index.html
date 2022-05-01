@@ -1,3 +1,4 @@
+{% import 'macros.html' as macro%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
    <h3> Popular News</h3>
    <ul>
       {% for popular_news in popular %}
-          <li>{{ popular_news.name}</li>
+      {{ macro.displayNewsList(popular)}}
       {% endfor %}
   </ul>
   
@@ -20,7 +21,7 @@
         <h3>Now Live</h3>
          <ul>
             {% for now_live_news in now_live %}
-                <li>{{ now_live_news.name}}</li>
+            {{ macro.displayNewsList(now_live)}}
             {% endfor %}
         </ul>
 </body>
