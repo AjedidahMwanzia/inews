@@ -7,7 +7,7 @@
 
 html, body{
     scroll-behavior: smooth;
-    color: black;
+    color: white;
     height: 100%;
     width: 100%;    
     font-family: 'PT Serif', serif;  
@@ -22,9 +22,6 @@ li {
     font-size: small;
 }
 
-.T {color: red;}
-.r {color: purple;}
-.e {color: rgb(16, 35, 204);}
 .news {color: black;}
 
 a {
@@ -38,7 +35,7 @@ a :hover{
 }
 
 .brand h1{     
-    color: rgb(16, 35, 204);
+    color: white;
     font-family:  'PT Serif', serif;
     font-size: 4em;    
 }
@@ -54,8 +51,8 @@ a :hover{
 }
 
 .jumbotron1{    
-    background-color: #7ef7f1;
-    color: black;
+    background-color:black ;
+    color: white;
     border-radius: 0em !important;    
 }
 
@@ -68,7 +65,7 @@ a :hover{
 }
 
 .jumbotron1 a:hover{
-    color: darkblue;
+    color: grey;
 }
 
 hr{
@@ -141,8 +138,8 @@ hr{
 }
 
 .jumbotron3{    
-    background-color: #53c4ba;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 0em !important;
     padding-left: 7% !important;
     padding-right: 3% !important;    
@@ -158,8 +155,8 @@ label{
 }
 
 .jumbotron4{    
-    background-color: #59d4ca;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 0em !important;
     padding-left: 7% !important;
     padding-right: 3% !important;
@@ -171,7 +168,7 @@ label{
 }
 
 .headline a{
-    color: rgb(14, 67, 121);
+    color: #068387;
 }
 
 .headline a:hover{
