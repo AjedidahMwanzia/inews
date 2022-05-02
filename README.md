@@ -78,12 +78,15 @@ In this app a user is able to explore various news categories including breaking
 * Bootstrap
 * Flask
 
-## Pending Issues
-* The footer is not yet polished to the required state.
-* Adjusting the the navbar to work effectively besides the sidebars.
 
-* Therefore, you can make a [pull request](https://github.com/AjedidahMwanzia/inews/pulls) to this repo improve it or adjust functionalities.
+## Authors Info
 
+-   Email- [Ajedidah Mwanzia](mailto:ajedidah.mwanzia@student.moringaschool.com)
+-   Linkedin - [Ajedidah Mwanzia](https://www.linkedin.com/in/ajedidah-mwanzia/)
+-   Portfolio - [Ajedidah Mwanzia](https://ajedidahmwanzia.github.io/portfolio/)
+
+
+[Go Back to the top](#INEWS)
 
 ### License
 The project is under [MIT LICENSE](LICENSE) 
