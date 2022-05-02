@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-  <h1>hi</h1>
-        <!-- <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best News website </title>
-        {% endif %} -->
-    </head>
-    <body>
-        <!-- Popular movie section  -->
-        <h3> Popular News</h3>
-         <ul>
-            {% for popular_source in popular %}
-                <li>{{ popular_source.name}}</li>
-            {% endfor %}
-        </ul>
- </body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="heading">INEWS</h1>
+<ul>
+    {% for article in articles %}
+    <div class="row">
+        <img src="{{article.urlToImage}}" class="img" alt="">
+        <div class="content">
+            <h3 class="title">{{article.title}}</h3>
+            <p>{{article.description}}</p>
+            <p>{{article.content}}</p>
+            <p>{{article.publishedAt}}</p>
+        </div>
+    </div>
+    {% endfor %}
+
+</ul>
