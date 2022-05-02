@@ -36,7 +36,7 @@ In this app a user is able to explore various news categories including breaking
 
 ## The App Structure
 ~~~
-|-TreNews
+|-INews
     |-app/
         |-main/
             |-__init__.py

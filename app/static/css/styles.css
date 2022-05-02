@@ -65,7 +65,7 @@ a :hover{
 }
 
 .jumbotron1 a:hover{
-    color: grey;
+    color: white;
 }
 
 hr{
@@ -83,7 +83,7 @@ hr{
 .lists p{
     font-size: 0.9em;    
     line-height: 0.8em;
-    color: rgb(63, 62, 62);
+    color: rgb(232, 230, 230);
 }
 
 .sources,
@@ -125,7 +125,7 @@ hr{
 }
 
 .carousel a:hover{
-    color: cyan;
+    color: #068387;
 }
 
 .row.display-flex {
@@ -172,7 +172,7 @@ label{
 }
 
 .headline a:hover{
-    color: blue;
+    color: white;
 }
 
 .head-suffix{
