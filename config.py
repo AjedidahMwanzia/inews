@@ -1,29 +1,35 @@
+import os
 
 class Config:
     '''
-    General configuration parent class
+    The main configuration class for the application
     '''
-    NEWS_API_BASE_URL='https://newsapi.org/v2/sources?apiKey={}'
-   
-
+    SECRET_KEY=os.environ.get('SECRET_KEY')
+    NEWS_API_KEY=os.environ.get('NEWS_API_KEY')
+ 
 
 
 class ProdConfig(Config):
     '''
-    Production  configuration child class
+    Class that forms the subclass of the Config class and Debug-effective in the production environment
+
     Args:
-        Config: The parent configuration class with General configuration settings
+        Config class
     '''
     pass
 
 
 class DevConfig(Config):
     '''
-    Development  configuration child class
+    Class that is a subclass of the Config class and Debug-effective in the development phase/environment
+
     Args:
-        Config: The parent configuration class with General configuration settings
+        Config class
     '''
+    DEBUG=True
 
-    DEBUG = True
 
-
+config_options={
+    'development': DevConfig,
+    'production': ProdConfig
+}
