@@ -166,6 +166,9 @@ label{
 .jumbotron4 p{
     font-size: medium;
 }
+.navbar-inverse{
+    background-color: black;
+}
 
 .headline a{
     color: #068387;
