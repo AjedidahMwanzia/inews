@@ -23,7 +23,7 @@ def get_news(country, category):
         country & category
     '''
 
-    get_news_url = 'http://newsapi.org/v2/top-headlines?country={}&category={}&apiKey=a5c46c1b3ff04caa89efa315e550a5d1'.format(country, category, api_key)
+    get_news_url = 'http://newsapi.org/v2/top-headlines?country={}&category={}&apiKey=8c73eea6c87b4c1aaa5f32347ce1df66'.format(country, category, api_key)
 
     with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
@@ -82,7 +82,7 @@ def news_from_source(source_id):
 
     '''
   
-    get_url = 'http://newsapi.org/v2/everything?sources={}&pageSize=30&apiKey=a5c46c1b3ff04caa89efa315e550a5d1'.format(source_id, api_key)
+    get_url = 'http://newsapi.org/v2/everything?sources={}&pageSize=30&apiKey=8c73eea6c87b4c1aaa5f32347ce1df66'.format(source_id, api_key)
 
     with urllib.request.urlopen(get_url) as url:
         get_data = url.read()
@@ -102,7 +102,7 @@ def get_sources():
     Function that uses the url request and returns the available sources
     '''
 
-    get_sources_url = 'https://newsapi.org/v2/sources?country=us&category=general&language=en&apiKey=a5c46c1b3ff04caa89efa315e550a5d1'.format(api_key)
+    get_sources_url = 'https://newsapi.org/v2/sources?country=us&category=general&language=en&apiKey=8c73eea6c87b4c1aaa5f32347ce1df66'.format(api_key)
 
     with urllib.request.urlopen(get_sources_url) as url:
         get_sources_data = url.read()
@@ -143,7 +143,7 @@ def search_topic(query):
     Args:
         query
     '''
-    search_topic_url = 'https://newsapi.org/v2/everything?q={}&sortBy=relevancy,publishedAt&pageSize=30&apiKey=a5c46c1b3ff04caa89efa315e550a5d1'.format(query, api_key)
+    search_topic_url = 'https://newsapi.org/v2/everything?q={}&sortBy=relevancy,publishedAt&pageSize=30&apiKey=8c73eea6c87b4c1aaa5f32347ce1df66'.format(query, api_key)
     with urllib.request.urlopen(search_topic_url) as url:
         search_topic_data = url.read()
         search_topic_response = json.loads(search_topic_data)
@@ -164,7 +164,7 @@ def search_from_source(query, source):
     Args:
         query, source
     '''
-    search_topic_url = 'https://newsapi.org/v2/everything?q={}&sortBy=relevancy,publishedAt&pageSize=30&sources={}&apiKey=a5c46c1b3ff04caa89efa315e550a5d1'.format(query, source, api_key)
+    search_topic_url = 'https://newsapi.org/v2/everything?q={}&sortBy=relevancy,publishedAt&pageSize=30&sources={}&apiKey=8c73eea6c87b4c1aaa5f32347ce1df66'.format(query, source, api_key)
     with urllib.request.urlopen(search_topic_url) as url:
         search_topic_data = url.read()
         search_topic_response = json.loads(search_topic_data)
