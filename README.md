@@ -13,8 +13,7 @@ This is an application that will help the user with a list and preview news arti
 In this app a user is able to explore various news categories including breaking news, business, sports among others. Users can also check out news articles from specific media houses, and from specific countries. One is able to search topics from around the globe, and for a more refined search, find articles from specific media houses. The app gives the time an article was posted, its source and author, and a brief content description. Tap on article links to read full articles on the source websites.
 
 ## Project live sites
-  * This is the live [link to the repo ]() <br>
-  * This is the live [link to the app ]()
+  * This is the live [link to the app ](https://jaynews.herokuapp.com/)
 
 
 
